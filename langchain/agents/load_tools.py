@@ -248,7 +248,7 @@ _EXTRA_OPTIONAL_TOOLS: Dict[str, Tuple[Callable[[KwArg(Any)], BaseTool], List[st
     "bing-search": (_get_bing_search, ["bing_subscription_key", "bing_search_url"]),
     "ddg-search": (_get_ddg_search, []),
     "google-serper": (_get_google_serper, ["serper_api_key"]),
-    "serpapi": (_get_serpapi, ["serpapi_api_key", "aiosession"]),
+    "serpapi": (_get_serpapi, ["serpapi_api_key", "serpapi_api_base_url", "aiosession"]),
     "searx-search": (_get_searx_search, ["searx_host", "engines", "aiosession"]),
     "wikipedia": (_get_wikipedia, ["top_k_results", "lang"]),
     "human": (_get_human_tool, ["prompt_func", "input_func"]),
